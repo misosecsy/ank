@@ -11,30 +11,59 @@
 			flex-direction: column;
 			min-height: 100vh;
 			background-color: #EDEDED;
-			font-family: sans-serif, futura;
-			font-size: 1vw;
+			font-family: future, sans-serif;
 			justify-content: center;
 			align-items: center;
 		}
+		
 		img {
 			display: block;
 			margin-bottom: 2rem;
-			max-width: 25%;
+			width: 100%;
+			max-width: 400px;
 			height: auto;
 		}
+
 		p {
 			margin: 0;
 			text-align: center;
+			font-size: 2rem;
 		}
+
 		.footer {
 			position: absolute;
 			bottom: 0;
 			margin-bottom: 2rem;
+			font-size: 1rem;
+		}
+
+		@media only screen and (max-width: 600px) {
+			img {
+				max-width: 90%;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+
+			.footer {
+				font-size: 0.8rem;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			p {
+				font-size: 1rem;
+			}
+
+			.footer {
+				font-size: 0.6rem;
+			}
 		}
 	</style>
 </head>
 <body>
-	<img src="Anokha_logo.png" alt="Anokha logo">
+	<img src="Anokha_logo.png" alt="anokha logo">
 	<div class="footer">
 		<p>ANOKHA</p>
 	</div>
